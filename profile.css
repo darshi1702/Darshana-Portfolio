@@ -1,0 +1,150 @@
+*{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.left{
+    width: 22%;
+    height: 90vh;
+    background-color:royalblue; /*: rgb(36, 172, 250);*/
+    color: blanchedalmond;
+    padding: 20px;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.right{
+    width: 78%;
+    height: 90vh;
+    background-color:rgb(227, 233, 231);
+    float: left;
+    overflow: auto;
+    padding: 0px 20px;
+    color: black;
+}
+
+.profilepic{
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    margin-bottom: 30px;
+}
+
+h1{
+    font-size: 22px;
+    text-align: center;
+}
+
+button{
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: none;
+}
+button:hover{
+    cursor: pointer;
+}
+
+.bio{
+    text-align: center;
+    font-size: 1.06em;
+    padding: 10px;
+}
+
+.nav-bar{
+    display: flex;
+    color:purple;
+    background-color:rgb(59, 57, 57);
+    background: -webkit-linear-gradient(left, rgb(214, 214, 9), #d030d3);
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    height: 10vh;
+}
+.nav-bar h2{
+    font-size: 2em;
+}
+.nav a{
+    color: grey;
+    text-decoration: none;
+    margin: 0px 8px;
+}
+.nav a:hover{
+    margin: 0 5px;
+    color: black;
+    transition: ease-in-out 0.5s;
+    font-weight: 600;
+}
+
+.content{
+    margin: 40px 60px;
+    
+}
+.content p{
+    padding: 5px;
+    font: optional;
+}
+.resume_project{
+    display: flex;
+    
+    margin: 15px 0;
+}
+.resume_project a{
+    text-align: initial;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    width: max-content;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    border-radius: 50px;
+    padding: 5px 10px;
+    font-size: 15px;
+    margin-right: 50px;
+}
+.resume_project a:hover{
+    background-color: #116dff;
+    color: aliceblue;
+}
+
+@media only screen and (max-width:600px){
+.contact{
+    display:none;
+}
+}
+
+@media only screen and (max-width: 500px) {
+.left{
+    float: none;
+    width: 100%;
+}
+.right{
+    float: none;
+    width: 100%;
+    height: auto;
+}
+.content{
+    margin: 20px 0;
+}
+.nav-bar h2{
+    font-size: 1.6em;
+}
+.nav{
+    position: absolute;
+    right:0;
+}
+.nav a{
+    font-size: 0.9em;
+    margin: 0 0px;
+}
+.nav a:hover{
+    margin: 0 1px;
+    font-weight: 400;
+}
+}
