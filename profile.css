@@ -31,7 +31,7 @@
 .profilepic{
     border-radius: 50%;
     width: 180px;
-    height: 180px;
+    height: 195px;
     object-fit: cover;
     margin-bottom: 30px;
 }
@@ -113,6 +113,58 @@ button:hover{
     background-color: #116dff;
     color: aliceblue;
 }
+
+.project_head{
+    font-size: 35px;
+    padding-top: 7vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.projects {
+    height: 90vh;
+    background-color: rgb(216, 201, 179);
+    /* text-align: center; */
+}
+.project{
+    height: 60vh;
+    background-color: white;
+    /* border: 1px solid rgba(16, 10, 10); */
+    box-shadow: 0 0 5px rgba(8,7,16,0.6);
+    padding: 10vh 2vw;
+    margin: 40px 22vw;
+    /* text-align: center; */
+}
+.project_no{
+    color: blue;
+    font-size: 24px;
+}
+.project_name{
+    font-size: 22px;
+}
+.project_logo{
+    height:50px;
+    float: right;
+}
+.project_details{
+    color: rgb(66, 59, 59);
+    padding: 10px;
+}
+.project_link{
+    box-sizing: border-box;
+    width: max-content;
+    background-color: rgb(225, 177, 81);
+    text-decoration: none;
+    color: rgb(68, 42, 220);
+    border-radius: 50px;
+    padding: 5px 10px;
+    font-size: 15px;
+    margin-right: 50px;
+}
+.project_link:hover{
+    background-color: rgb(234, 227, 227);
+    border: 2px solid rgb(225,177,81);
+}
+
+
 
 @media only screen and (max-width:700px){
 .contact{
