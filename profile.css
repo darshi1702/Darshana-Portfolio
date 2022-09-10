@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+
 *{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0;
@@ -41,12 +43,12 @@ h1{
     text-align: center;
 }
 
-button{
+.btn{
     padding: 10px 20px;
     border-radius: 30px;
     border: none;
 }
-button:hover{
+.btn:hover{
     cursor: pointer;
 }
 
@@ -59,7 +61,7 @@ button:hover{
 .nav-bar{
     display: flex;
     color:purple;
-    background-color:rgb(59, 57, 57);
+    /* background-color:rgb(57, 59, 59); */
     background: -webkit-linear-gradient(left, rgb(214, 214, 9), #d030d3);
     align-items: center;
     justify-content: space-between;
@@ -71,7 +73,7 @@ button:hover{
     margin-left: 15px;
 }
 .nav a{
-    color: grey;
+    color: rgb(12, 12, 12);
     text-decoration: none;
     margin: 0px 8px;
 }
@@ -114,23 +116,59 @@ button:hover{
     color: aliceblue;
 }
 
+
+.footer{
+    padding: 15px 2vw;
+    background-color: rgb(174, 177, 177);
+    color: rgb(0, 0, 0);
+}
+.contacts{
+    display: flex;
+    justify-content: space-between;
+}
+.links{
+    margin-top: 2vh;
+}
+.links a{
+    margin-right: 1vw;
+    text-decoration: none;
+    color: rgb(34, 0, 255);
+}
+a img{
+    width:30px;
+    height: 30px;
+    border: 1px white solid;
+}
+#other_contacts{
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+}
+#other_contacts span{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
 .project_head{
     font-size: 35px;
     padding-top: 7vh;
     font-family: Arial, Helvetica, sans-serif;
 }
 .projects {
-    height: 90vh;
+    min-height: 90vh;
     background-color: rgb(216, 201, 179);
+    padding-bottom: 20px;
     /* text-align: center; */
 }
 .project{
-    height: 60vh;
+    min-height: 50vh;
+    height: max-content;
     background-color: white;
     /* border: 1px solid rgba(16, 10, 10); */
     box-shadow: 0 0 5px rgba(8,7,16,0.6);
     padding: 10vh 2vw;
-    margin: 40px 22vw;
+    margin: 40px 22vw 0;
     /* text-align: center; */
 }
 .project_no{
@@ -151,7 +189,7 @@ button:hover{
 .project_link{
     box-sizing: border-box;
     width: max-content;
-    background-color: rgb(225, 177, 81);
+    background-color: rgb(38, 230, 63);
     text-decoration: none;
     color: rgb(68, 42, 220);
     border-radius: 50px;
@@ -164,6 +202,10 @@ button:hover{
     border: 2px solid rgb(225,177,81);
 }
 
+
+#btn2{
+    display: none;
+}
 
 
 @media only screen and (max-width:700px){
@@ -216,4 +258,16 @@ button {
     margin: 0 2px;
     font-weight: 400;
 }
+
+.project{
+    margin: 30px 2vw;
+}
+
+#btn1{
+    display: none;
+}
+#btn2{
+    display: block;
+}
+
 }
